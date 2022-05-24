@@ -247,7 +247,7 @@ h3 {
     display: block;
   }
   .links {
-    margin: 5px;
+    margin: 0px;
     display: none;
     width: 100%;
     background-color: var(--summer-catalog--v04-4-hex);
@@ -258,6 +258,7 @@ h3 {
   .links.show {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     z-index: 2;
   }
   .links.unexpand {
@@ -349,7 +350,7 @@ h3 {
     margin: 0;
   }
   100% {
-    margin: 5px;
-    height: 83px;
+    margin-bottom: 0px;
+    height: 90px;
   }
 }
