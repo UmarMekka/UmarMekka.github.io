@@ -37,12 +37,19 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 5px 15px;
+  flex-wrap: wrap;
 }
 
 .nameLogo {
   font-size: 25px;
   color: var(--summer-catalog--v04-3-hex);
   font-weight: 700;
+}
+
+.hamburger {
+  fill: var(--summer-catalog--v04-5-hex);
+  width: 22px;
+  display: none;
 }
 
 .links {
@@ -203,7 +210,7 @@ h3 {
   margin-bottom: 20px;
 }
 
-.contactMe {
+.contactMeSection {
   background-image: radial-gradient(
       rgba(245, 238, 220, 0.92),
       rgba(245, 238, 220, 0.92)
@@ -236,6 +243,29 @@ h3 {
 }
 
 @media screen and (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+  .links {
+    margin: 5px;
+    display: none;
+    width: 100%;
+    background-color: var(--summer-catalog--v04-4-hex);
+    border-radius: 10px;
+    /* position: absolute; */
+  }
+  .links.show {
+    display: flex;
+    flex-direction: column;
+    animation: appear 1s forwards;
+    z-index: 2;
+  }
+  .links button {
+    background-color: none;
+  }
+  nav button:nth-of-type(3) {
+    background: none;
+  }
   h1 {
     font-size: 50px;
   }
@@ -267,5 +297,18 @@ h3 {
   .demo {
     width: 80%;
     text-align: center;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    height: 0px;
+  }
+  40% {
+    height: 80px;
+  }
+  100% {
+    opacity: 1;
   }
 }
