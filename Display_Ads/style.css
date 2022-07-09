@@ -60,3 +60,12 @@ header {
 .full-image.open {
   transform: translate(-50%, -50%) scale(1);
 }
+
+@media screen and (max-width: 767px) {
+  .display_gallery {
+    flex-direction: column;
+  }
+  .display_gallery img {
+    width: 90%;
+  }
+}
