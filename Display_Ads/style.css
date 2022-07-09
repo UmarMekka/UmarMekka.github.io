@@ -27,6 +27,7 @@ header {
 
 .display_gallery img {
   width: 30%;
+  height: 30%;
 }
 
 .modal {
