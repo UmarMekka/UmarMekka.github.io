@@ -32,6 +32,7 @@ body {
   background-image: url("UX_CaseStudy_1_BG.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
+  -webkit-background-size: 5675px 2160px;
 }
 
 h3 {
