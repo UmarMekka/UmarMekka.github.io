@@ -171,3 +171,21 @@ nav button:nth-of-type(3) {
       align-items: center; */
   padding: 20px;
 }
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 767px) {
+  .UX_Intro {
+    flex-direction: column;
+  }
+  .statements {
+    flex-direction: column;
+  }
+  .personas {
+    flex-direction: column;
+  }
+}
