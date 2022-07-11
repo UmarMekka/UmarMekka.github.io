@@ -268,6 +268,10 @@ h3 {
 }
 
 @media screen and (max-width: 767px) {
+  .demoImage {
+    width: 80%;
+    text-align: center;
+  }
   .demoRow {
     padding: 10px 0 20px 0;
   }
