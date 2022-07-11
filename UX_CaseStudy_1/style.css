@@ -59,6 +59,10 @@ nav button:nth-of-type(3) {
   color: var(--black);
 }
 
+.hamburger {
+  fill: var(--yellow-main);
+}
+
 .UX_Intro {
   text-align: center;
   margin: 50px auto;
