@@ -182,10 +182,26 @@ nav button:nth-of-type(3) {
   .UX_Intro {
     flex-direction: column;
   }
+  .introduction {
+    width: 100%;
+    padding: 15px 0;
+  }
   .statements {
     flex-direction: column;
   }
+  .problem,
+  .solution {
+    color: var(--black);
+    width: 100%;
+    padding: 10px 0px;
+  }
   .personas {
     flex-direction: column;
+  }
+  .persona {
+    margin: auto;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 800px;
   }
 }
