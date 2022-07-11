@@ -19,10 +19,23 @@
 body {
   margin: 0;
   height: 100%;
-  background-image: url("UX_CaseStudy_1_BG.jpg");
+  /* background-image: url("UX_CaseStudy_1_BG.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center; */
+}
+
+#background_wrap {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image: url("UX_CaseStudy_1_BG.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 h3 {
