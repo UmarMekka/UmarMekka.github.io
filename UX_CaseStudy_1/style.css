@@ -19,6 +19,10 @@
 body {
   margin: 0;
   height: 100%;
+  /* background-image: url("UX_CaseStudy_1_BG.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; */
 }
 
 #background_wrap {
@@ -32,7 +36,6 @@ body {
   background-image: url("UX_CaseStudy_1_BG.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  -webkit-background-size: 5675px 2160px;
 }
 
 h3 {
