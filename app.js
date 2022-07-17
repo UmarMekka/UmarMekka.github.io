@@ -36,3 +36,47 @@ document.querySelectorAll('a[href^="#"').forEach((anchor) => {
     });
   });
 });
+
+// Contact Section - Typing Effect
+
+const texts = ['Questions? ', 'Commissions? ', 'Consulting? '];
+let count = 0;
+let index = 0;
+let currentText = '';
+let letter = '';
+let forwards = true;
+
+function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+  }
+
+(function type() {
+    if (count === texts.length){
+        count = 0;
+    }
+    if (forwards === true) {
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+
+      if(letter.length === currentText.length){
+        forwards = false;
+        sleep(1200);
+    }}
+
+    if (forwards === false) {
+      letter = letter.substring(0, letter.length - 1);
+      if (letter ===  ''){
+        forwards = true;
+        count++;
+        index = 0;
+      }
+    }
+
+    document.querySelector('.typing').textContent = letter;
+
+    setTimeout(type, 100);
+}());
