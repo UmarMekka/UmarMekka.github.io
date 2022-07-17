@@ -175,21 +175,40 @@
         </div>
       </section>
       <section class="contactMeSection">
-        <form
-          class="contactMeForm"
-          action="https://formsubmit.co/umekkaoui@gmail.com"
-          method="POST"
-        >
-          <input type="text" name="name" required />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-          />
-          <input type="text" name="message" required />
-          <button type="submit">Send</button>
-        </form>
+        <div class="contactMe">
+          <div class="findYour">
+            <h3>Reach Out To Me!</h3>
+            <h3><p class="typing"></p></h3>
+
+            <p class="copy">
+              Whether you have questions regarding my portfolio, want to
+              commission me for a project, or just want to chat, you can reach
+              out to me anytime! Just fill out the form below and I'll get back
+              to you as soon as possible.
+            </p>
+          </div>
+          <form
+            class="contactMeForm"
+            action="https://formsubmit.co/umekkaoui@gmail.com"
+            method="POST"
+          >
+            <input type="text" name="name" placeholder="Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <textarea
+              id="message"
+              type="textarea"
+              name="message"
+              placeholder="How can I help you?"
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer></footer>
