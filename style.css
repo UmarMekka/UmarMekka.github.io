@@ -213,6 +213,7 @@ h3 {
 .demoImage {
   width: 30%;
   text-align: center;
+  overflow: visible;
 }
 
 .demo h2 {
