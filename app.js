@@ -54,7 +54,7 @@ function sleep(milliseconds) {
     } while (currentDate - date < milliseconds);
   }
 
-function type() {
+(function type() {
     if (count === texts.length){
         count = 0;
     }
@@ -76,9 +76,7 @@ function type() {
       }
     }
 
-    document.querySelector('.typing').innerText = letter;
+    document.querySelector('.typing').textContent = letter;
 
     setTimeout(type, 100);
-};
-
-type();
+}());
