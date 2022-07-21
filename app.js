@@ -46,15 +46,15 @@ let currentText = '';
 let letter = '';
 let forwards = true;
 
-function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-      currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-  }
-
+// function sleep(milliseconds) {
+//     const date = Date.now();
+//     let currentDate = null;
+//     do {
+//       currentDate = Date.now();
+//     } while (currentDate - date < milliseconds);
+//   }
 (function type() {
+  let pauseTime = false
     if (count === texts.length){
         count = 0;
     }
@@ -64,8 +64,10 @@ function sleep(milliseconds) {
 
       if(letter.length === currentText.length){
         forwards = false;
-        sleep(1200);
-    }}
+        pauseTime = true;
+      } else {
+        pauseTime = false;
+      }}
 
     if (forwards === false) {
       letter = letter.substring(0, letter.length - 1);
@@ -78,5 +80,9 @@ function sleep(milliseconds) {
 
     document.querySelector('.typing').textContent = letter;
 
+    if (pauseTime === true){
+      setTimeout(type, 1200)
+    } else {
     setTimeout(type, 100);
+      }
 }());
