@@ -65,8 +65,6 @@ let forwards = true;
       if(letter.length === currentText.length){
         forwards = false;
         pauseTime = true;
-      } else {
-        pauseTime = false;
       }}
 
     if (forwards === false) {
