@@ -19,10 +19,6 @@
 body {
   margin: 0;
   height: 100%;
-  /* background-image: url("UX_CaseStudy_1_BG.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center; */
 }
 
 #background_wrap {
@@ -175,6 +171,13 @@ nav button:nth-of-type(3) {
   padding: 10px;
   width: 100%;
   max-width: 1200px;
+}
+
+.UJ {
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+  max-width: 1300px;
 }
 
 .prototypes {
