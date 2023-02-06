@@ -46,7 +46,7 @@ header {
 }
 
 .nameLogo_UX1 {
-  font-family: "Lilita One", cursive;
+  font-family: "Lilita One", arial black, arial;
   font-weight: 400;
   font-style: normal;
 }
@@ -84,7 +84,7 @@ nav button:nth-of-type(3) {
 
 .UX_Intro h1 {
   color: var(--brown);
-  font-family: "Lilita One", serif;
+  font-family: "Lilita One", arial black, arial;
   text-transform: uppercase;
 }
 
@@ -196,7 +196,7 @@ nav button:nth-of-type(3) {
 section h3 {
   padding-bottom: 10px;
   text-transform: capitalize;
-  font-family: "Lilita One", serif;
+  font-family: "Lilita One", arial black, arial;
 }
 
 h4 {
@@ -208,7 +208,7 @@ h4 {
 .mini-column-3 span,
 .mini-column-7 span {
   color: var(--red-dark);
-  font-family: "Lilita One", serif;
+  font-family: "Lilita One", arial black, arial;
   font-size: 25px;
 }
 
@@ -233,7 +233,7 @@ section h2 {
   text-align: center;
   margin: auto;
   font-size: 55px;
-  font-family: "Lilita One", serif;
+  font-family: "Lilita One", arial black, arial;
 }
 
 /* Design Thinking */
