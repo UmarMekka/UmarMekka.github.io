@@ -28,6 +28,7 @@ h3 a {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 header {
