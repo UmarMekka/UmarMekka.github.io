@@ -1,0 +1,25 @@
+.addNavBG {
+  animation: bgFadeIn 0.75s forwards;
+}
+
+.removeNavBG {
+  animation: bgFadeOut 0.5s forwards;
+}
+
+@keyframes bgFadeIn {
+  from {
+    background-color: #00000000;
+  }
+  to {
+    background-color: #30343ad5;
+  }
+}
+
+@keyframes bgFadeOut {
+  from {
+    background-color: #30343ad5;
+  }
+  t {
+    background-color: #00000000;
+  }
+}
