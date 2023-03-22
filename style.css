@@ -82,6 +82,7 @@ button {
   font-size: 16px;
   padding: 2px 8px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 nav h3 {
