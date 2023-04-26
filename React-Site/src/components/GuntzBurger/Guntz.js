@@ -200,7 +200,7 @@ const Guntz = () => {
         </Row>
         <hr></hr>
       <Row>
-        <h2 className="guntz-phase">Repeat Prototype and Phase</h2>
+        <h2 className="guntz-phase">Repeat Prototype and Test Phases</h2>
 
         <h2 className="guntz-indent">Iterations</h2>
         <h3>Practice Makes Perfect</h3>
